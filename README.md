@@ -1,2 +1,2 @@
 # YGPAcalculate
-This is fully responsive website to calculate your YGPA.
+This is a fully responsive website to calculate your YGPA.
