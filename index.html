@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate YGPA</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="gradientBackground">
+
+    <!-- Home page...Taking input from user -->
+    <div class="container">
+        <div class="marksDetails">
+            <p id="heading">Hey! check your YGPA here.</p>
+            <div class="Semester oddSem">
+                <p class="semText">Odd Sem</p>
+                <div class="inputBlock">
+                    <div class="credit">
+                        <p>Credit</p>
+                        <input class="inputBox input1" type="number" placeholder="Credit" step="1" min="0"> 
+                    </div>
+                    <div class="errorMessege errorMessege1">
+                        <p>Can't be blank!</p>
+                    </div>
+                    <div>
+                        <p>Credit Points</p>
+                        <input class="inputBox input2" type="number" placeholder="Credit Points" step="1" min="0">
+                    </div>
+                </div>
+            </div>
+
+            <div class="Semester evenSem">
+                <p class="semText">Even Sem</p>
+                <div class="inputBlock">
+                    <div class="credit">
+                        <p>Credit</p>
+                        <input class="inputBox input3" type="number" placeholder="Credit" step="1" min="0"> 
+                    </div>
+                    <div class="errorMessege errorMessege2">
+                        <p>Can't be blank!</p>
+                    </div>
+                    <div>
+                        <p>Credit Points</p>
+                        <input class="inputBox input4" type="number" placeholder="Credit Points" step="1" min="0">
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn">View YGPA</button>
+        </div>
+        <div class="imageBlock gradientBackground">
+            <img src="images/undraw_education_f8ru.svg" style="width: 100%;">
+        </div>
+    </div>
+
+    <!-- Show YGPA -->
+    <div class="success-block">
+        <img src="images/icon-success.svg" class="success-icon" alt="">
+        <p class="thanksTitle">Congratulations!</p>
+        <p class="confirmationText">You got <span>9.56</span> YGPA</p>
+        <button class="btn dismiss-btn" type="submit" onclick="othername();">Go Back!</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
